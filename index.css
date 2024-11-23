@@ -1,0 +1,65 @@
+.tic-tac-toe td {
+    width: 33%;
+    height: 33%;
+    border: solid 5px silver;
+    padding: 5px;
+    text-align: center;
+}
+
+table.tic-tac-toe {
+    width: 50vh;
+    height: 50vh;
+    border: solid 10px black;
+    border-collapse: collapse;
+}
+
+.tic-tac-toe td.tic {
+    /* width: 180px;
+    height: 180px; */
+    /* background-color: aqua; */
+    background-image: url('./icons/tic.svg');
+    background-size: cover;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+.tic-tac-toe td.tac {
+    /* background-color: blueviolet; */
+    background-image: url('./icons/tac.svg');
+    background-size: cover;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+.container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.default-black-button {
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    height: 2em;
+    width: 33%;
+}
+
+p.primary-text {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    padding: 0.1em;
+}
