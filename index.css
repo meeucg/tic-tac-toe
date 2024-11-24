@@ -2,8 +2,13 @@
     width: 33%;
     height: 33%;
     border: solid 5px silver;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
+    opacity: 0%;
+
+    transition-property: opacity;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier();
 }
 
 table.tic-tac-toe {
@@ -11,9 +16,14 @@ table.tic-tac-toe {
     height: 50vh;
     border: solid 10px black;
     border-collapse: collapse;
+    background-image: none;
 }
 
-.tic-tac-toe td.tic {
+.tic-tac-toe td.toe {
+    opacity: 0%;
+}
+
+.tic-tac-toe td.tic-enabled {
     /* width: 180px;
     height: 180px; */
     /* background-color: aqua; */
@@ -21,15 +31,38 @@ table.tic-tac-toe {
     background-size: cover;
     background-origin: content-box;
     background-repeat: no-repeat;
+    opacity: 100%;
 }
 
-.tic-tac-toe td.tac {
+.tic-tac-toe td.tac-enabled {
     /* background-color: blueviolet; */
     background-image: url('./icons/tac.svg');
     background-size: cover;
     background-origin: content-box;
     background-repeat: no-repeat;
+    opacity: 100%;
 }
+
+.tic-tac-toe td.tic-disabled {
+    /* width: 180px;
+    height: 180px; */
+    /* background-color: aqua; */
+    background-image: url('./icons/tic.svg');
+    background-size: cover;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    opacity: 50%;
+}
+
+.tic-tac-toe td.tac-disabled {
+    /* background-color: blueviolet; */
+    background-image: url('./icons/tac.svg');
+    background-size: cover;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    opacity: 50%;
+}
+
 
 .container-main {
     display: flex;
